@@ -1,6 +1,8 @@
 // Para funcionar o import foi instalado a dependência sucrase
-import express from "express";
-import routes from "./routes";
+import express from 'express';
+import routes from './routes';
+// importa o database
+import './database';
 
 class App {
   constructor() {
