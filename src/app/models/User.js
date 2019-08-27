@@ -23,9 +23,9 @@ class User extends Model {
     return this;
   }
 
-  // criando relacionamento do User com File
+  // criando relacionamento do User com File / as = codenome
   static associate(models) {
-    this.belongsTo(models.File, { foreignKey: 'avatar_id' });
+    this.belongsTo(models.File, { foreignKey: 'avatar_id', as: 'avatar' });
   }
 
   checkPassword(password) {
